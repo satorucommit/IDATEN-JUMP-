@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idaten Jump - Retro Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="container nav-inner">
+            <div class="logo">
+                <div class="logo-icon"></div> IDATEN JUMP
+            </div>
+            <ul class="nav-links">
+                <li><a href="#riders">Riders</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#bikes">Bikes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#xzone">X-Zone</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="container hero">
+        <div class="hero-text">
+            <h1>READY.<br>SET.<br>JUMP.</h1>
+            <p>Welcome to the X-Zone. The battle for the Platinum Emblem begins now. Are you ready to ride?</p>
+            <a href="#riders" class="neo-btn">Start Race</a>
+        </div>
+        <div class="hero-image-wrapper">
+            <div class="computer-frame">
+                <div class="screen">
+                    <img src="main.jpg" alt="Sho Yamato Riding">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK LINKS BAR -->
+    <div class="quick-links">
+        <div class="container ql-grid">
+            <div class="ql-item"><span>THE RIDERS</span><span class="arrow">↗</span></div>
+            <div class="ql-item"><span>MTB SPECS</span><span class="arrow">↗</span></div>
+            <div class="ql-item"><span>EPISODES</span><span class="arrow">↗</span></div>
+            <div class="ql-item"><span>RULES</span><span class="arrow">↗</span></div>
+        </div>
+    </div>
+
+    <!-- MAIN RIDERS (browser card style) -->
+    <section class="container" id="riders">
+        <h2 class="section-title">The Team</h2>
+        <div class="riders-grid">
+
+            <div class="browser-card">
+                <div class="browser-header">
+                    <div class="dot"></div><div class="dot"></div>
+                    <div class="address-bar">flame-kaiser.html</div>
+                </div>
+                <div class="card-img">
+                    <img src="images/sho.jpg" alt="Sho Yamato">
+                </div>
+                <div class="card-body">
+                    <h3>Sho Yamato</h3>
+                    <p>The enthusiastic protagonist who loves MTB. Owner of the legendary Flame Kaiser. He rides with his heart and never gives up.</p>
+                    <button class="neo-btn">View Profile</button>
+                </div>
+            </div>
+
+            <div class="browser-card">
+                <div class="browser-header">
+                    <div class="dot"></div><div class="dot"></div>
+                    <div class="address-bar">neptune.html</div>
+                </div>
+                <div class="card-img">
+                    <img src="images/makoto.jpg" alt="Makoto Shido">
+                </div>
+                <div class="card-body">
+                    <h3>Makoto Shido</h3>
+                    <p>Sho's childhood friend and the reliable sister figure of the group. Skilled and calm, she rides the Neptune with precision.</p>
+                    <button class="neo-btn">View Profile</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ALL CHARACTERS SECTION -->
+    <section class="container" id="characters">
+        <h2 class="section-title">All Characters</h2>
+        <div class="characters-grid">
+
+            <!-- Sho Yamato -->
+            <div class="char-card">
+                <div class="char-img">
+                    <img src="images/sho.jpg" alt="Sho Yamato">
+                </div>
+                <div class="char-body">
+                    <h3>Sho Yamato</h3>
+                    <span class="role-tag">Protagonist</span>
+                    <p>A passionate MTB rider who gets pulled into the X-Zone. His bond with Flame Kaiser is unbreakable. Bike: Flame Kaiser.</p>
+                </div>
+            </div>
+
+            <!-- Makoto Shido -->
+            <div class="char-card">
+                <div class="char-img">
+                    <img src="images/makoto.jpg" alt="Makoto Shido">
+                </div>
+                <div class="char-body">
+                    <h3>Makoto Shido</h3>
+                    <span class="role-tag">Ally</span>
+                    <p>Sho's childhood friend. Calm, strategic, and fiercely loyal. She rides Neptune and is one of the strongest riders in the group.</p>
+                </div>
+            </div>
+
+            <!-- Kyoichi Sudo -->
+            <div class="char-card">
+                <div class="char-img">
+                    <img src="images/kyoichi.jpg" alt="Kyoichi Sudo">
+                </div>
+                <div class="char-body">
+                    <h3>Kyoichi Sudo</h3>
+                    <span class="role-tag">Rival</span>
+                    <p>The cool and elite rival of Sho. Rides the Thunder Emperor with incredible speed and technical mastery. Later becomes an ally.</p>
+                </div>
+            </div>
+
+            <!-- Gabu -->
+            <div class="char-card">
+                <div class="char-img">
+                    <img src="images/gabu.jpg" alt="Gabu">
+                </div>
+                <div class="char-body">
+                    <h3>Gabu</h3>
+                    <span class="role-tag">Ally</span>
+                    <p>A big-hearted and powerful rider from the X-Zone. His raw strength and loyalty make him a key member of Sho's crew.</p>
+                </div>
+            </div>
+
+            <!-- Ayumu Yamato -->
+            <div class="char-card">
+                <div class="char-img">
+                    <img src="images/ayumu.jpg" alt="Ayumu Yamato">
+                </div>
+                <div class="char-body">
+                    <h3>Ayumu Yamato</h3>
+                    <span class="role-tag">Sho's Younger Brother</span>
+                    <p>Sho's younger brother and the reason Sho entered the X-Zone. A legendary rider who disappeared after a mysterious race. His fate drives the entire story.</p>
+                </div>
+            </div>
+
+            <!-- Kakeru -->
+            <div class="char-card">
+                <div class="char-img">
+                    <img src="images/kakeru.jpg" alt="Kakeru" style="object-position: center top;">
+                </div>
+                <div class="char-body">
+                    <h3>Kakeru</h3>
+                    <span class="role-tag">Ally</span>
+                    <p>Young and energetic, Kakeru brings enthusiasm and heart to every race. He looks up to Sho and grows throughout the series.</p>
+                </div>
+            </div>
+
+            <!-- Arthur -->
+            <div class="char-card">
+                <div class="char-img">
+                    <img src="images/arthur.jpg" alt="Arthur">
+                </div>
+                <div class="char-body">
+                    <h3>Arthur</h3>
+                    <span class="role-tag">Rider</span>
+                    <p>A powerful and determined rider who commands the Hammer Head. Arthur's brute force and fearless style make him a formidable presence in the X-Zone.</p>
+                </div>
+            </div>
+
+            <!-- Koei -->
+            <div class="char-card">
+                <div class="char-img">
+                    <img src="images/koei.jpg" alt="Koei">
+                </div>
+                <div class="char-body">
+                    <h3>Koei</h3>
+                    <span class="role-tag">Antagonist</span>
+                    <p>A ruthless and cunning antagonist who controls the X-Zone's dark forces. Rides the Aero Scissors with terrifying aggression.</p>
+                </div>
+            </div>
+
+            <!-- Takeshi Yamato -->
+            <div class="char-card">
+                <div class="char-img">
+                    <img src="images/takeshi-yamato.jpg" alt="Takeshi Yamato">
+                </div>
+                <div class="char-body">
+                    <h3>Takeshi Yamato</h3>
+                    <span class="role-tag">Sho's Father</span>
+                    <p>Sho and Ayumu's father and a legendary rider of the X-Zone. He rides the mighty Imperial X, the most powerful bike ever created.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- ALL BIKES SECTION -->
+    <div class="bikes-section" id="bikes">
+        <div class="container">
+            <h2 class="section-title">The Bikes</h2>
+            <div class="bikes-grid">
+
+                <!-- Flame Kaiser -->
+                <div class="bike-card">
+                    <div class="bike-img">
+                        <img src="images/flame-kaiser.jpg" alt="Flame Kaiser">
+                    </div>
+                    <div class="bike-info">
+                        <h3>Flame Kaiser</h3>
+                        <span class="rider-tag">Rider: Sho Yamato</span>
+                        <p>The legendary red MTB with a fiery spirit. Responds to Sho's emotions and unleashes the Idaten Jump at full power.</p>
+                    </div>
+                </div>
+
+                <!-- Thunder Emperor -->
+                <div class="bike-card">
+                    <div class="bike-img">
+                        <img src="images/thunder-emperor.jpg" alt="Thunder Emperor">
+                    </div>
+                    <div class="bike-info">
+                        <h3>Thunder Emperor</h3>
+                        <span class="rider-tag">Rider: Kyoichi Sudo</span>
+                        <p>A powerful MTB crackling with electric energy. Built for raw speed and dominance on any terrain in the X-Zone.</p>
+                    </div>
+                </div>
+
+                <!-- Neptune -->
+                <div class="bike-card">
+                    <div class="bike-img">
+                        <img src="images/neptune.jpg" alt="Neptune">
+                    </div>
+                    <div class="bike-info">
+                        <h3>Neptune</h3>
+                        <span class="rider-tag">Rider: Makoto Shido</span>
+                        <p>A sleek blue MTB built for precision and control. Neptune's balanced performance mirrors Makoto's calm riding style.</p>
+                    </div>
+                </div>
+
+                <!-- Aero Scissors -->
+                <div class="bike-card">
+                    <div class="bike-img">
+                        <img src="images/aero-scissors.jpg" alt="Aero Scissors">
+                    </div>
+                    <div class="bike-info">
+                        <h3>Aero Scissors</h3>
+                        <span class="rider-tag">Rider: Koei</span>
+                        <p>A razor-sharp MTB designed to cut through the air. Its scissor-like frame slices through any course with deadly precision.</p>
+                    </div>
+                </div>
+
+                <!-- Hammer Head -->
+                <div class="bike-card">
+                    <div class="bike-img">
+                        <img src="images/hammer-head.jpg" alt="Hammer Head">
+                    </div>
+                    <div class="bike-info">
+                        <h3>Hammer Head</h3>
+                        <span class="rider-tag">Rider: Arthur</span>
+                        <p>A heavy-hitting MTB built like a battering ram. Smashes through obstacles and overpowers rivals with sheer brute force.</p>
+                    </div>
+                </div>
+
+                <!-- Bloody Fang -->
+                <div class="bike-card">
+                    <div class="bike-img">
+                        <img src="images/bloody-fang.jpg" alt="Bloody Fang">
+                    </div>
+                    <div class="bike-info">
+                        <h3>Bloody Fang</h3>
+                        <span class="rider-tag">Rider: Gabu</span>
+                        <p>A dark and menacing MTB ridden by Gabu. Aggressive, unpredictable, and built to destroy every opponent in its path.</p>
+                    </div>
+                </div>
+
+                <!-- Imperial Dragon -->
+                <div class="bike-card">
+                    <div class="bike-img">
+                        <img src="images/imperial-dragon.jpg" alt="Imperial Dragon">
+                    </div>
+                    <div class="bike-info">
+                        <h3>Imperial Dragon</h3>
+                        <span class="rider-tag">Rider: Ayumu Yamato</span>
+                        <p>A fearsome dragon-themed MTB ridden by Sho's younger brother Ayumu. Imperial Dragon dominates the X-Zone with overwhelming force and authority.</p>
+                    </div>
+                </div>
+
+                <!-- Imperial X -->
+                <div class="bike-card">
+                    <div class="bike-img">
+                        <img src="images/imperial-x.jpg" alt="Imperial X">
+                    </div>
+                    <div class="bike-info">
+                        <h3>Imperial X</h3>
+                        <span class="rider-tag">Rider: Takeshi Yamato</span>
+                        <p>The ultimate MTB ridden by Sho's father Takeshi Yamato. Imperial X is the most powerful bike in the X-Zone, representing the pinnacle of bike evolution.</p>
+                    </div>
+                </div>
+
+                <!-- Imperial Tiger -->
+                <div class="bike-card">
+                    <div class="bike-img">
+                        <img src="images/imperial-tiger.jpg" alt="Imperial Tiger">
+                    </div>
+                    <div class="bike-info">
+                        <h3>Imperial Tiger</h3>
+                        <span class="rider-tag">Rider: Kakeru</span>
+                        <p>Young and energetic Kakeru rides the Imperial Tiger with fearless spirit. The tiger-themed MTB matches his explosive and unpredictable racing style.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SHOW SUMMARY SECTION -->
+    <section class="container summary-section" id="about">
+        <h2 class="section-title">About the Show</h2>
+        <div class="summary-box">
+            <div class="summary-tag-row">
+                <span class="summary-tag">2006</span>
+                <span class="summary-tag">52 Episodes</span>
+                <span class="summary-tag">Studio Pierrot</span>
+                <span class="summary-tag">Shounen</span>
+                <span class="summary-tag">Sports / Adventure</span>
+            </div>
+            <p>Idaten Jump is a Japanese anime series that follows <strong>Sho Yamato</strong>, a passionate young mountain bike (MTB) rider who one day gets mysteriously transported into a hidden parallel world known as the <strong>X-Zone</strong> — a dangerous and thrilling realm where MTB battles decide everything.</p>
+            <p>In the X-Zone, riders compete in intense races across extreme terrains using special bikes with unique abilities. Sho rides the legendary <strong>Flame Kaiser</strong>, a fiery red MTB that responds to his emotions and grows stronger with his determination. Alongside his childhood friend <strong>Makoto Shido</strong> and rival-turned-ally <strong>Kyoichi Sudo</strong>, Sho fights his way through the X-Zone's toughest challenges.</p>
+            <p>But Sho's journey is driven by more than just racing — he is searching for his younger brother <strong>Ayumu Yamato</strong>, who disappeared into the X-Zone after a mysterious race. As Sho digs deeper, he uncovers the truth about his own family, his father <strong>Takeshi Yamato</strong>, and the legendary bikes that hold the fate of the X-Zone itself.</p>
+            <p>With high-octane races, powerful rivals, evolving bikes, and a story full of heart and brotherhood, Idaten Jump became a beloved classic — especially among fans in India where it aired on Cartoon Network.</p>
+        </div>
+    </section>
+
+    <!-- X-ZONE SECTION -->
+    <section class="zones-section" id="xzone">
+        <h2 class="section-title">From the X-Zone</h2>
+        <div class="featured-image-wrapper">
+            <img src="images/imperial-island.jpg" alt="Imperial Island">
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>DESIGNED FOR IDATEN RIDERS. &copy; 2025</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
