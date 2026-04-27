@@ -13,6 +13,89 @@ function showToast(msg) {
     }, 2500);
 }
 
+// --- LOADING SCREEN ---
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader-wrapper');
+    if (loader) {
+        loader.classList.add('loaded');
+    }
+});
+
+// --- SCROLL-TRIGGERED CARD ANIMATIONS ---
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+        }
+    });
+}, observerOptions);
+
+// Observe all cards
+document.querySelectorAll('.char-card, .bike-card, .browser-card').forEach(card => {
+    observer.observe(card);
+});
+
+// --- SECTION TITLE GLITCH EFFECT ---
+const sectionTitles = document.querySelectorAll('.section-title');
+const titleObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('glitch');
+            setTimeout(() => entry.target.classList.remove('glitch'), 300);
+        }
+    });
+}, { threshold: 0.5 });
+
+sectionTitles.forEach(title => titleObserver.observe(title));
+
+// --- NAVBAR HIDE ON SCROLL DOWN, SHOW ON SCROLL UP ---
+let lastScroll = 0;
+const navbar = document.querySelector('nav');
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > lastScroll && currentScroll > 100) {
+        navbar.style.transform = 'translateY(-100%)';
+    } else {
+        navbar.style.transform = 'translateY(0)';
+    }
+    
+    lastScroll = currentScroll;
+});
+
+// --- IMAGE PARALLAX INSIDE CARDS ---
+document.querySelectorAll('.char-card, .bike-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const percentX = (x - centerX) / centerX;
+        const percentY = (y - centerY) / centerY;
+        
+        const img = card.querySelector('img');
+        if (img) {
+            img.style.transform = `translate(${percentX * 10}px, ${percentY * 10}px) scale(1.1)`;
+        }
+    });
+    
+    card.addEventListener('mouseleave', () => {
+        const img = card.querySelector('img');
+        if (img) {
+            img.style.transform = 'translate(0, 0) scale(1)';
+        }
+    });
+});
+
 // --- BUTTON INTERACTIONS ---
 document.querySelectorAll('.neo-btn').forEach(button => {
     button.addEventListener('click', (e) => {
